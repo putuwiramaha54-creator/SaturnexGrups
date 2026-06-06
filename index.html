@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE -->
+    <title>Saturnex AI - Smart Assistant</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Saturnex AI - Smart assistant with voice, chat, and logic system">
+    <meta name="author" content="RLG Groups">
+    <meta property="og:title" content="Saturnex AI">
+    <meta property="og:description" content="AI assistant modern with chat and voice system">
+    <meta name="robots" content="index, follow">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#00d4ff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="assets/logo-ai.png">
+    <link rel="icon" href="assets/logo-ai.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONT AWESOME -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- LOADING -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="logo-container">
+            <img src="assets/logo-ai.png" class="logo-ai" alt="Saturnex AI">
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
+    <!-- MAIN APP -->
+    <div id="mainApp" class="main-app hidden">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <button id="menuBtn" class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="header-content">
+                <img src="assets/icon-ai.png" class="ai-icon" alt="AI Icon">
+
+                <div>
+                    <h1>Saturnex AI</h1>
+                    <span id="versionText" class="version-text">
+                        v2.6.1.11.12
+                    </span>
+                </div>
+            </div>
+
+        </header>
+
+        <!-- SIDE MENU -->
+        <div id="sideMenu" class="side-menu">
+
+            <div class="side-menu-content">
+
+                <h2>Saturnex AI</h2>
+
+                <p class="app-desc">
+                    Information about Saturnex AI app version v2.6.1.11.12 <br><br>
+
+                    Developer RLG Groups created Saturnex AI with logic system and voice features.<br>
+                    Voice system is still in development.<br><br>
+
+                    Update info via WhatsApp Channel:<br>
+
+                    <a href="https://whatsapp.com/channel/0029Vb7XBXy6buMH7ZzYLj0X"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       style="color:#25D366;text-decoration:underline;font-weight:600;">
+
+                       👉 Join WhatsApp Channel
+                    </a>
+
+                    <br><br>
+
+                    Version: v2.6.1.11.12 <br>
+                    Developer: RLG Groups <br><br>
+
+                    Features:<br>
+                    • Voice Chat<br>
+                    • Translate<br>
+                    • Menu System<br>
+                    • AI Chat System
+                </p>
+
+                <button id="closeMenu" class="close-menu">
+                    Close Menu
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- CHAT -->
+        <div id="chatContainer" class="chat-container"></div>
+
+        <!-- TYPING -->
+        <div id="typingIndicator" class="typing-indicator hidden">
+            <div class="typing-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <span>Saturnex AI is thinking...</span>
+        </div>
+
+        <!-- INPUT -->
+        <div class="input-area">
+            <div class="input-wrapper">
+
+                <input type="text" id="messageInput"
+                    placeholder="Tanyakan apa saja..."
+                    maxlength="1000"
+                    autocomplete="off">
+
+                <button id="voiceBtn" class="input-voice-btn">
+                    <i class="fas fa-microphone"></i>
+                </button>
+
+                <button id="sendBtn" class="send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
